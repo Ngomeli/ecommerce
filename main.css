@@ -175,3 +175,57 @@ h4 {
     transform: translateY(-5%);
     /*makes the products to move up when the user hovers on them*/
 }
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.col-2 .offerImg {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
+
+/*---------------------------------Testimonial-----------------------------------*/
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p {
+    margin: 12px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #555;
+}
