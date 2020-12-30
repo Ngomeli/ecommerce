@@ -252,3 +252,108 @@ small {
     filter: grayscale(0);
     /*returns the original color of the images when the user hovers on them*/
 }
+
+
+/*-------------------------Footer Section--------------------------------*/
+
+footer {
+    color: #8a8a8a;
+    background-color: #000;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+footer p {
+    color: #8a8a8a;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footerCol1,
+.footerCol2,
+.footerCol3,
+.footerCol4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footerCol1 {
+    flex-basis: 30%;
+}
+
+.footerCol2 {
+    flex: 1;
+    /*occupies all the available space*/
+    text-align: center;
+}
+
+.footerCol2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footerCol3,
+.footerCol4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+    cursor: pointer;
+}
+
+footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menuBtn {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+@media(max-width:768px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        /*hides the links until the menu icon is clicked*/
+        transition: max-height 0.5s;
+        /*it takes 0.5seconds to open and close the navigation bar*/
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+}
