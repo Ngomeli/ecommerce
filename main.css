@@ -229,3 +229,26 @@ small {
     font-size: 16px;
     color: #555;
 }
+
+
+/*-----------------------------Brands Section---------------------------*/
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    /*makes the images to be gray hencde loosing there original color*/
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+    /*returns the original color of the images when the user hovers on them*/
+}
