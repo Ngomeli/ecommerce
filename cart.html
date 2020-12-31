@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Cart - RedStore</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo icon" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#account">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" alt="Cart image" class="cart" width="30px" height="30px">
+                <img src="images/menu.png" alt="" class="menuBtn" onclick="menutoggle()">
+            </div>
+        </div>
+    </header>
+    <!-- Cart Items -->
+    <div class="smallContainer cartPage">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartInfo">
+                        <img src="images/buy-1.jpg" alt="">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartInfo">
+                        <img src="images/buy-2.jpg" alt="">
+                        <div>
+                            <p>Sneakers</p>
+                            <small>Price: $80.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$80.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartInfo">
+                        <img src="images/buy-3.jpg" alt="">
+                        <div>
+                            <p>Gray Sweatpants</p>
+                            <small>Price: $60.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$60.00</td>
+            </tr>
+        </table>
+        <div class="totalPrice">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$190.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$220.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footerCol1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footerCol2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accesibility to the Many.</p>
+                </div>
+                <div class="footerCol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footerCol4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
