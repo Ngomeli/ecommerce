@@ -20,89 +20,48 @@
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="index.html" target="_blank">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" target="_blank">Products</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="account.html" target="_blank">Account</a></li>
                     </ul>
                 </nav>
-                <img src="images/cart.png" alt="Cart image" class="cart" width="30px" height="30px">
+                <a href="cart.html" target="_blank"> <img src="images/cart.png" alt="Cart image" class="cart" width="30px" height="30px"></a>
                 <img src="images/menu.png" alt="" class="menuBtn" onclick="menutoggle()">
             </div>
         </div>
     </header>
-    <!-- Cart Items -->
-    <div class="smallContainer cartPage">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cartInfo">
-                        <img src="images/buy-1.jpg" alt="">
-                        <div>
-                            <p>Red Printed T-Shirt</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Remove</a>
+    <section class="accountPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="formContainer">
+                        <div class="formBtn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
                         </div>
+                        <form action="" id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form action="" id="registerForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                        </form>
                     </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$50.00</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cartInfo">
-                        <img src="images/buy-2.jpg" alt="">
-                        <div>
-                            <p>Sneakers</p>
-                            <small>Price: $80.00</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$80.00</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cartInfo">
-                        <img src="images/buy-3.jpg" alt="">
-                        <div>
-                            <p>Gray Sweatpants</p>
-                            <small>Price: $60.00</small>
-                            <br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$60.00</td>
-            </tr>
-        </table>
-        <div class="totalPrice">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$190.00</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>$30.00</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$220.00</td>
-                </tr>
-            </table>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
     <!-- Footer Section -->
     <footer>
         <div class="container">
@@ -143,6 +102,25 @@
         </div>
     </footer>
 
+    <script>
+        // Js for toggle account form
+
+        var loginForm = document.getElementById("loginForm");
+        var registerForm = document.getElementById("registerForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registerForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            registerForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
     <script src="main.js"></script>
 </body>
 

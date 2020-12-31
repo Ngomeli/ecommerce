@@ -490,6 +490,89 @@ th:last-child {
     text-align: right;
 }
 
+
+/*-----------------------------Account Page----------------------*/
+
+.accountPage {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.formContainer {
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /*it hides the other form when the user selects either login or register*/
+}
+
+.formContainer span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.formBtn {
+    display: inline-block;
+}
+
+.formContainer form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#loginForm {
+    left: -300px;
+}
+
+#registerForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#indicator {
+    width: 100px;
+    border: none;
+    background-color: #ff523b;
+    height: 3px;
+    margin-top: 8 px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
 @media(max-width:768px) {
     nav ul {
         position: absolute;
